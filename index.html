@@ -2,78 +2,114 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Ware World</title>
-   <link rel="stylesheet" href="css/miestilo.css">
-
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/miestilo.css" />
 </head>
 
-<body>
-
-   <header class="sticky">
-      <div>
-         <a href="./index.html"><img src="./img/wareWorld.jpg" alt="Logo wareWorld"></a>
-      </div>
-      <nav>
-         <ul>
-            <li><a href="./pages/hardware.html">Hardware</a></li>
-            <li><a href="./pages/software.html">Software</a></li>
-            <li><a href="./pages/armado.html">Armado</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-         </ul>
-      </nav>
+<body class="index">
+   <header class="head">
+      <section class="head1">
+         <a href="./index.html"><img class="logo" src="../img/wareWorld.jpg" alt="Logo wareWorld" width="200px"
+               height="60px" /></a>
+      </section>
+      <section class="head2">
+         <nav>
+            <ul class="navlist">
+               <li><a href="../pages/hardware.html">Hardware</a></li>
+               <li><a href="../pages/software.html">Software</a></li>
+               <li><a href="../pages/armado.html">Armado</a></li>
+               <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+         </nav>
+      </section>
+      <section class="head3">
+         <input type="text" name="" placeholder="buscar productos" />
+      </section>
+      <section class="head4">
+         <div class="DropdownCarrito">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="carrito" src="../img/carrito.avif" alt="carrito" alt="carrito" />
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Agregar productos</a></li>
+                  <li><a class="dropdown-item" href="#">Finalizar compra</a></li>
+               </ul>
+            </li>
+         </div>
+         <div class="DropdownBurguer">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="burguer" src="../img/burguer.png" /></a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                     <a class="dropdown-item" href="../pages/hardware.html">Hardware</a>
+                  </li>
+                  <li>
+                     <a class="dropdown-item" href="../pages/software.html">SoftWare</a>
+                  </li>
+                  <li>
+                     <a class="dropdown-item" href="../pages/armado.html">Armado</a>
+                  </li>
+                  <li>
+                     <a class="dropdown-item" href="contacto.html">Contacto</a>
+                  </li>
+               </ul>
+            </li>
+         </div>
+      </section>
    </header>
-
-
-
 
    <main>
       <section class="hero">
          <div>
             <p>El lugar para armar tu pc</p>
-            <h2>Aca en Ware World te vamos a ayudar en el armado de tu pc desde 0.
-               Te aconsejaremos que componentes usar para sacar el maximo provecho de tu nueva pc.
-               Te ofreceremos un amplio surtido de hardware como tambien todo lo necesario del
-               software para que puedas lograr todo eso que quierasa
+            <h2>
+               Aca en Ware World te vamos a ayudar en el armado de tu pc desde 0.
+               Te aconsejaremos que componentes usar para sacar el maximo provecho
+               de tu nueva pc. Te ofreceremos un amplio surtido de hardware como
+               tambien todo lo necesario del software para que puedas lograr todo
+               eso que quierasa
             </h2>
             <a class="boton" href="">COMENZAMOS?</a>
          </div>
       </section>
 
-
-      <section class="Productos">
-         <h2>Productos</h2>
-         <div>
+      <section>
+         <h3 class="h3section">PRODUCTOS</h3>
+      </section>
+      <section class="section3 "class="indexmas">
+         <div class="div1-3">
             <h3>Graficas</h3>
             <img src="./img/4090.jpeg" alt="">
-            <a href="">Mas</a>
+            <a href="./pages/hardware.html">Mas</a>
          </div>
-         <div>
-            <h3>Procesadores</h3>
-            <img src="./img/procesadores.jpg" alt="">
-            <a href="">Ir</a>
-         </div>
-         <div>
+         <div class="div2-3">
             <h3>Paquete Office</h3>
             <img src="./img/office.jpg" alt="">
-            <a href="">Ir</a>
+            <a href="./pages/software.html">MAS</a>
+         </div>
+         <div class="div3-3">
+            <h3>Armado</h3>
+            <img src="./img/destornillador.webp" alt="">
+            <a href="./pages/armado.html">MAS</a>
          </div>
       </section>
 
-
-
       <div class="btn-wpp">
          <a href="https://api.whatsapp.com/send/?phone=%2B5491137707322&text&type=phone_number&app_absent=0"
-            target="_blank"><img src="./img/whatsapp.png" alt="logo wpp"></a>
+            target="_blank"><img src="./img/whatsapp.png" alt="logo wpp" /></a>
       </div>
 
-
-
       <section class="video">
-         <h2> <span>Importancia de los componentes</span></h2>
+         <h2><span>Importancia de los componentes</span></h2>
          <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/0zkX6nlpiSk"
                title="YouTube video player" frameborder="0"
@@ -82,90 +118,93 @@
          </div>
       </section>
 
-
-
       <section class="fotoUsuario">
          <h2>Resenias</h2>
          <div>
-            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.23_PM-removebg-preview.png" alt="Foto usuario 1">
+            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.23_PM-removebg-preview.png" alt="Foto usuario 1" />
             <table>
                <th>Nombre</th>
-               <th> Juan y carina </th>
+               <th>Juan</th>
                <tr>
-                  <td> Edad </td>
-                  <td> 27 y 30 </td>
+                  <td>Edad</td>
+                  <td>27 </td>
                </tr>
                <tr>
-                  <td> Pais </td>
-                  <td> Estados Unidos </td>
+                  <td>Pais</td>
+                  <td>Estados Unidos</td>
                </tr>
                <tr>
-                  <td> Valoracion </td>
-                  <td> 4.5/5 </td>
+                  <td>Valoracion</td>
+                  <td>4.5/5</td>
                </tr>
             </table>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem quod dolor ut earum totam
-               maiores vitae, fugiat ipsam quisquam quis quam quo ea. Et dolor facere ea iure tempora?</p>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+               autem quod dolor ut earum totam maiores vitae, fugiat ipsam quisquam
+               quis quam quo ea. Et dolor facere ea iure tempora?
+            </p>
          </div>
          <div>
-            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.24_PM-removebg-preview.png" alt="Foto usuario 1">
+            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.24_PM-removebg-preview.png" alt="Foto usuario 1" />
             <table>
                <th>Nombre</th>
-               <th> Harrison </th>
+               <th>Harrison</th>
                <tr>
-                  <td> Edad </td>
-                  <td> 31 </td>
+                  <td>Edad</td>
+                  <td>31</td>
                </tr>
                <tr>
-                  <td> Pais </td>
-                  <td> Inglaterra </td>
+                  <td>Pais</td>
+                  <td>Inglaterra</td>
                </tr>
                <tr>
-                  <td> Valoracion </td>
-                  <td> 5/5 </td>
+                  <td>Valoracion</td>
+                  <td>5/5</td>
                </tr>
             </table>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem quod dolor ut earum totam
-               maiores vitae, fugiat ipsam quisquam quis quam quo ea. Et dolor facere ea iure tempora?</p>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+               autem quod dolor ut earum totam maiores vitae, fugiat ipsam quisquam
+               quis quam quo ea. Et dolor facere ea iure tempora?
+            </p>
          </div>
          <div>
-            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.24_PM__1_-removebg-preview.png" alt="Foto usuario 1">
+            <img src="./img/WhatsApp_Image_2023-06-25_at_3.22.24_PM__1_-removebg-preview.png" alt="Foto usuario 1" />
             <table>
                <th>Nombre</th>
-               <th> Gergiona </th>
+               <th>Gergiona</th>
                <tr>
-                  <td> Edad </td>
-                  <td> 26 </td>
+                  <td>Edad</td>
+                  <td>26</td>
                </tr>
                <tr>
-                  <td> Pais </td>
-                  <td> Argentina </td>
+                  <td>Pais</td>
+                  <td>Argentina</td>
                </tr>
                <tr>
-                  <td> Valoracion </td>
-                  <td> 4/5 </td>
+                  <td>Valoracion</td>
+                  <td>4/5</td>
                </tr>
             </table>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem quod dolor ut earum totam
-               maiores vitae, fugiat ipsam quisquam quis quam quo ea. Et dolor facere ea iure tempora?</p>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+               autem quod dolor ut earum totam maiores vitae, fugiat ipsam quisquam
+               quis quam quo ea. Et dolor facere ea iure tempora?
+            </p>
          </div>
-
       </section>
-
-
-
    </main>
-
-
 
    <footer id="footer">
       <div>
-         <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="logo facebook"></a>
-         <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="logo instragram"></a>
-         <a href="https://www.twitter.com/" target="_blank"><img src="./img/gorjeo.png" alt="logo twter"></a>
+         <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="logo facebook" /></a>
+         <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="logo instragram" /></a>
+         <a href="https://www.twitter.com/" target="_blank"><img src="./img/gorjeo.png" alt="logo twter" /></a>
       </div>
-
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 
 </body>
 

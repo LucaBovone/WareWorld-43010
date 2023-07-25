@@ -2,78 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ware World</title>
-    <link rel="stylesheet" href="../css/miestilo.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/miestilo.css" />
 </head>
-<!--Head/body/header/nav/section/footer ETIQUETAS SEMANTICAS ESTRUCTURALES-->
-<!--Existen etiquetas no semanticas para agrupar contenido para luego distribuirlos en conjuntos /DIV/-->
 
-<body>
-
-    <header class="sticky">
-        <div>
-            <a href="../index.html"><img src="../img/wareWorld.jpg" alt="Logo wareWorld"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../pages/hardware.html">Hardware</a></li>
-                <li><a href="../pages/software.html">Software</a></li>
-                <li><a href="../pages/armado.html">Armado</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<body class="hardware">
+    <header class="head">
+        <section class="head1">
+            <a href="../index.html"><img class="logo" src="../img/wareWorld.jpg" alt="Logo wareWorld" width="200px"
+                    height="60px" /></a>
+        </section>
+        <section class="head2">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="../pages/hardware.html">Hardware</a></li>
+                    <li><a href="../pages/software.html">Software</a></li>
+                    <li><a href="../pages/armado.html">Armado</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="head3">
+            <input type="text" name="" placeholder="buscar productos" />
+        </section>
+        <section class="head4">
+            <div class="DropdownCarrito">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="carrito" src="../img/carrito.avif" alt="carrito" alt="carrito" />
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Agregar productos</a></li>
+                        <li><a class="dropdown-item" href="#">Finalizar compra</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="DropdownBurguer">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="burguer" src="../img/burguer.png" /></a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="software.html">SoftWare</a>
+                        </li>
+                        <li><a class="dropdown-item" href="armado.html">Armado</a></li>
+                        <li>
+                            <a class="dropdown-item" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </section>
     </header>
 
-
-
-
     <main>
-        <section class="hero">
-            <div>
-                <p>HARDWARE</p>
-                <h2>
-                </h2>
-                <a class="boton" href="">COMENZAMOS?</a>
+        <section>
+            <h3 class="h3section">GRAFICAS</h3>
+        </section>
+        <section class="section3">
+            <div class="div1-3">
+                <img src="../img/gtx650.png" alt="..." />
+                <p>Nvidia Gforce 650</p>
+                <h3>$159.999</h3>
+                <a href="">COMPRAR</a>
+            </div>
+            <div class="div2-3">
+                <img src="../img/nvidia2080.png" alt="..." />
+                <p>Evga Gforce Rtx 2080</p>
+                <h3>$359.999</h3>
+                <a href="">COMPRAR</a>
+            </div>
+            <div class="div3-3">
+                <img src="../img/rtx5700.png" alt="..." />
+                <p>asus rock 5700 xt</p>
+                <h3>$279.999</h3>
+                <a href="">COMPRAR</a>
+            </div>
+            <div class="div4-3">
+                <img src="../img/radeon580.png" alt="..." />
+                <p>msi radeon 580</p>
+                <h3>$174.6999</h3>
+                <a href="">COMPRAR</a>
             </div>
         </section>
 
-        <section class="Productos">
-            <h2>Productos</h2>
-            <div>
-                <h3>Graficas</h3>
-                <img src="../img/4090.jpeg" alt="">
-                <a href="">Mas</a>
+        <section>
+            <h3 class="h4section">Procesadores</h3>
+        </section>
+        <section class="section3">
+            <div class="div1-3">
+                <img src="../img/i5.png" alt="..." />
+                <p>Intel I5 10gen</p>
+                <h3>$130.999</h3>
+                <a href="">COMPRAR</a>
             </div>
-            <div>
-                <h3>Procesadores</h3>
-                <img src="../img/procesadores.jpg" alt="">
-                <a href="">Ir</a>
+            <div class="div2-3">
+                <img src="../img/i7.png" alt="..." />
+                <p>Intel I7 11gen</p>
+                <h3>$479.999</h3>
+                <a href="">COMPRAR</a>
             </div>
-            <div>
-                <h3>Paquete Office</h3>
-                <img src="../img/office.jpg" alt="">
-                <a href="">Ir</a>
+            <div class="div3-3">
+                <img src="../img/ryzen-5-5600.png" alt="..." />
+                <p>ryzen 5 5600</p>
+                <h3>$179.999</h3>
+                <a href="">COMPRAR</a>
+            </div>
+            <div class="div4-3">
+                <img src="../img/ryzen7.png" alt="..." />
+                <p>ryzen 7 5700</p>
+                <h3>$249.999</h3>
+                <a href="">COMPRAR</a>
             </div>
         </section>
+        <div class="btn-wpp">
+            <a href="https://api.whatsapp.com/send/?phone=%2B5491137707322&text&type=phone_number&app_absent=0"
+                target="_blank"><img src="../img/whatsapp.png" alt="logo wpp" /></a>
+        </div>
     </main>
 
-
-
     <footer id="footer">
-        <div>
-            <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png" alt="logo facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png"
-                    alt="logo instragram"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="../img/gorjeo.png" alt="logo twter"></a>
-        </div>
-
+        <footer id="footer">
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png"
+                        alt="logo facebook" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png"
+                        alt="logo instragram" /></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="../img/gorjeo.png" alt="logo twter" /></a>
+            </div>
+        </footer>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
