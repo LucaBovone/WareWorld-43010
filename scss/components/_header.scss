@@ -1,0 +1,61 @@
+$black: black;
+$yellow: rgb(221, 214, 7);
+$gold: rgb(168, 159, 30);
+$darkGray: rgba(26, 26, 26, 0.92);
+$lightGray: rgba(39, 39, 39, 0.9);
+$shadowColor: rgba(110, 107, 4, 0.78);
+
+/* HEADER */
+.head {
+    background: -webkit-linear-gradient(bottom, $black 90%, $darkGray);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .head1 {
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .head2 li {
+        padding: 30px 40px 30px 40px;
+        display: inline-block;
+    }
+
+    .head3 input {
+        color: $black !important;
+        border: 2px $black solid;
+        padding: 10px;
+        border-radius: 20px;
+        width: 290px;
+        font-size: 15px;
+    }
+
+    .head4 {
+        display: flex;
+
+        a img {
+            height: 45px;
+            width: 45px;
+            margin-right: 25px;
+        }
+
+        div li a {
+            color: $black !important;
+        }
+
+        div li {
+            color: $black !important;
+            text-align: center;
+        }
+    }
+
+    .DropdownBurguer {
+        display: none;
+    }
+}

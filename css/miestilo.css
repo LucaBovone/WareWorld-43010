@@ -576,7 +576,7 @@ justify-items: center;
 
 /*Media Quary INDEX*/
 
-@media screen and (max-width:1500px) {
+/* @media screen and (max-width:1500px) {
    .lh-lg {
       font-size: 60px;
    }
@@ -587,7 +587,7 @@ justify-items: center;
       height: 35vh;
       width: 90%;
    }
-}
+} */
 @media screen and (max-width:1020px) {
    .lh-lg {
       font-size: 60px;

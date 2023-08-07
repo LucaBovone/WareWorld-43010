@@ -1,0 +1,533 @@
+// Variables
+$logoWidthLarge: 180px;
+$logoHeightLarge: 70px;
+$logoWidthSmall: 100px;
+$logoHeightSmall: 60px;
+
+$navFontSizeLarge: 20px;
+$navFontSizeMedium: 15px;
+$navFontSizeSmall: 12px;
+
+$dropdownFontSizeLarge: 20px;
+$dropdownFontSizeMedium: 15px;
+$dropdownFontSizeSmall: 12px;
+
+$buttonWppWidthLarge: 6vh;
+$buttonWppWidthMedium: 6vh;
+$buttonWppWidthSmall: 3vh;
+
+$videoHeightLarge: 35vh;
+$videoHeightMedium: 35vh;
+$videoHeightSmall: 18vh;
+
+// Mixins
+@mixin media-query($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Header styles
+header {
+    // Media queries for header
+    @include media-query(1190px) {
+        .head1 {
+            a {
+                .logo {
+                    width: $logoWidthSmall;
+                    height: $logoHeightSmall;
+                }
+            }
+        }
+
+        .head3 {
+            input {
+                width: 190px;
+            }
+        }
+
+        .head2 {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: $navFontSizeMedium;
+                        }
+                    }
+                }
+            }
+        }
+
+        .head4 {
+            .DropdownCarrito {
+                li {
+                    a {
+                        font-size: $dropdownFontSizeMedium;
+                    }
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-query(1035px) {
+        .head3 {
+            input {
+                width: 170px;
+            }
+        }
+
+        .head1 {
+            a {
+                .logo {
+                    width: $logoWidthSmall;
+                    height: $logoHeightSmall;
+                }
+            }
+        }
+    }
+
+    @include media-query(995px) {
+        .head3 {
+            input {
+                width: 130px;
+            }
+        }
+
+        .head2 {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: $navFontSizeSmall;
+                        }
+                    }
+                }
+            }
+        }
+
+        .head4 {
+            .DropdownCarrito {
+                li {
+                    a {
+                        font-size: $dropdownFontSizeSmall;
+                    }
+                }
+            }
+
+            .DropdownBurguer {
+                li {
+                    a {
+                        font-size: $dropdownFontSizeSmall;
+                    }
+                }
+            }
+
+            .perf {
+                a {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-query(920px) {
+        .head3 {
+            input {
+                display: none;
+            }
+        }
+    }
+
+    @include media-query(762px) {
+        .head1 {
+            a {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        main {
+            section {
+                .h3section {
+                    margin-top: 250px;
+                }
+            }
+        }
+    }
+
+    @include media-query(675px) {
+        justify-content: space-between;
+
+        .head1 {
+            padding-top: 15px;
+
+            a {
+                .logo {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .head2 {
+            nav {
+                ul {
+                    display: none;
+                }
+            }
+        }
+
+        .head4 {
+            .DropdownCarrito {
+                display: none;
+            }
+
+            .DropdownBurguer {
+                display: inline-block;
+
+                li {
+                    a {
+                        .burger {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media queries for main
+main {
+    // Default styles
+
+    @include media-query(1500px) {
+        .client, .pt-3, .pb-5 {
+            div {
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    div {
+                                        div {
+                                            div {
+                                                .lh-lg {
+                                                    font-size: 60px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-wpp {
+            a {
+                img {
+                    width: $buttonWppWidthMedium;
+                }
+            }
+        }
+
+        .video {
+            div {
+                iframe {
+                    height: $videoHeightMedium;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @include media-query(1020px) {
+        .client, .pt-3, .pb-5 {
+
+            div {
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    div {
+                                        div {
+                                            div {
+                                                .lh-lg {
+                                                    font-size: 60px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-wpp {
+            a {
+                img {
+                    width: $buttonWppWidthMedium;
+                }
+            }
+        }
+
+        .video {
+            div {
+                iframe {
+                    height: $videoHeightMedium;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @include media-query(860px) {
+        .hero {
+            div {
+                p {
+                    font-size: 70px;
+                }
+            }
+        }
+
+        .btn-wpp {
+            a {
+                img {
+                    width: 4vh;
+                }
+            }
+        }
+    }
+
+    @include media-query(840px) {
+        .client, .pt-3, .pb-5 {
+
+            div {
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    div {
+                                        div {
+                                            div {
+                                                .lh-lg {
+                                                    font-size: 40px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero {
+            padding-bottom: 25vh;
+
+            div {
+                p {
+                    font-size: 70px;
+                }
+            }
+
+            div {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .video {
+                div {
+                    iframe {
+                        height: 18vh;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-query(550px) {
+        .hero {
+            padding-bottom: 10vh;
+
+            div {
+                p {
+                    font-size: 40px;
+                }
+            }
+
+            div {
+                h2 {
+                    font-size: 35px;
+                }
+            }
+
+            div {
+                a {
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .btn-wpp {
+                a {
+                    img {
+                        width: 3vh;
+                    }
+                }
+            }
+
+            .video {
+                div {
+                    iframe {
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-query(450px) {
+        .client, .pt-3, .pb-5 {
+            div {
+                div {
+                    div {
+                        div {
+                            div {
+                                div {
+                                    div {
+                                        div {
+                                            div {
+                                                .lh-lg {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero {
+            padding-bottom: 10vh;
+
+            div {
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            div {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            .btn-wpp {
+                a {
+                    img {
+                        width: 2vh;
+                    }
+                }
+            }
+
+            .video {
+                div {
+                    iframe {
+                        height: 10vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media queries for section3
+main {
+    // Default styles
+
+    @include media-query(1020px) {
+        .section3 {
+            flex-wrap: wrap;
+        }
+    }
+
+    @include media-query(840px) {
+        .section3 {
+            .div4-3 {
+                display: block;
+            }
+        }
+    }
+
+    @include media-query(580px) {
+        .div4-3 {
+            display: block;
+        }
+    }
+}
+
+// Media queries for footer
+footer {
+    // Default styles
+
+    @include media-query(700px) {
+        div {
+            a {
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+
+    @include media-query(550px) {
+        div {
+            a {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    @include media-query(450px) {
+        div {
+            a {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

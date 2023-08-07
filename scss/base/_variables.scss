@@ -1,0 +1,38 @@
+$black: black;
+$yellow: rgb(221, 214, 7);
+$gold: rgb(168, 159, 30);
+$darkGray: rgba(26, 26, 26, 0.92);
+$lightGray: rgba(39, 39, 39, 0.9);
+$shadowColor: rgba(110, 107, 4, 0.78);
+
+// Variables
+$logoWidthLarge: 180px;
+$logoHeightLarge: 70px;
+$logoWidthSmall: 100px;
+$logoHeightSmall: 60px;
+
+$navFontSizeLarge: 20px;
+$navFontSizeMedium: 15px;
+$navFontSizeSmall: 12px;
+
+$dropdownFontSizeLarge: 20px;
+$dropdownFontSizeMedium: 15px;
+$dropdownFontSizeSmall: 12px;
+
+$buttonWppWidthLarge: 6vh;
+$buttonWppWidthMedium: 6vh;
+$buttonWppWidthSmall: 3vh;
+
+$videoHeightLarge: 35vh;
+$videoHeightMedium: 35vh;
+$videoHeightSmall: 18vh;
+
+// Mixins
+@mixin media-query($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+
+
