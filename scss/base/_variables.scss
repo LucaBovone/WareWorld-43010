@@ -27,6 +27,16 @@ $videoHeightLarge: 35vh;
 $videoHeightMedium: 35vh;
 $videoHeightSmall: 18vh;
 
+
+/* EXTEND */ 
+
+%flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 // Mixins
 @mixin media-query($size) {
     @media screen and (max-width: $size) {
@@ -34,5 +44,31 @@ $videoHeightSmall: 18vh;
     }
 }
 
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
 
+.form1{
+    @include flex (flex, center, center)
+} 
+
+@mixin textcenter ($center){
+    text-align: $center;
+}
+
+.divmicuenta label, .divmicuenta a{
+    @include textcenter(center)
+}
+
+@mixin backgroundset ($center, $cover, $norepeat, $fixed){
+    background-position: $center;
+    background-size: $cover;
+    background-repeat: $norepeat;
+    background-attachment: $fixed;
+}
+section form .divmicuenta div {
+    @include backgroundset(center, cover, none, none)
+}
 

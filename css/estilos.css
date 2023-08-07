@@ -23,6 +23,21 @@
 .contactofondo {
   background-image: url(../img/armado.jpg); }
 
+/* EXTEND */
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.divmicuenta label, .divmicuenta a {
+  text-align: center; }
+
+section form .divmicuenta div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: none; }
+
 /* HEADER */
 .head {
   background: -webkit-linear-gradient(bottom, black 90%, rgba(26, 26, 26, 0.92));
@@ -121,6 +136,7 @@ body {
       font-variant: small-caps;
       text-transform: none; }
     .hero div a {
+      width: 20%;
       font-size: 90%;
       margin: 2, 0, 0, 1; }
 
@@ -345,6 +361,36 @@ body {
   -moz-box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
   height: 90vh; }
 
+/* MI CUENTA (INICIO DE SESION) */
+main .form1 {
+  padding: 40px; }
+  main .form1 form {
+    background-color: rgba(31, 32, 35, 0.97);
+    box-shadow: -1px 5px 22px 4px rgba(110, 107, 4, 0.78);
+    -webkit-box-shadow: -1px 0px 22px 4px rgba(110, 107, 4, 0.78);
+    -moz-box-shadow: -1px 5px 22px 4px rgba(110, 107, 4, 0.78);
+    border: 1px solid #000000; }
+    main .form1 form .divmicuenta div {
+      display: grid;
+      padding: 50px;
+      border: 2px black solid; }
+    main .form1 form .divmicuenta h1 {
+      margin-bottom: 15px; }
+    main .form1 form .divmicuenta label {
+      margin-bottom: 5px; }
+    main .form1 form .divmicuenta input {
+      color: black !important;
+      margin-bottom: 15px;
+      background-color: white;
+      border: 2px #a89f1e solid;
+      padding: 10px; }
+    main .form1 form .divmicuenta a {
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      border: 2px #a89f1e solid;
+      margin-top: 20px; }
+
 footer {
   background-color: black;
   display: block;
@@ -517,3 +563,15 @@ footer div a img {
     width: 40px;
     height: 40px;
     padding: 0px; } }
+
+/* QUERY INICIAR SESION */
+@media screen and (max-width: 500px) {
+  main .form1 form .divmicuenta div h1 {
+    font-size: 60%;
+    text-align: center; }
+  main .form1 form .divmicuenta div input {
+    width: 100%; }
+  main .form1 form .divmicuenta div label {
+    font-size: 60%; }
+  main .form1 form .divmicuenta div a {
+    font-size: 60%; } }

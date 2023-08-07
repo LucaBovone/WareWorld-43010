@@ -1,32 +1,3 @@
-// Variables
-$logoWidthLarge: 180px;
-$logoHeightLarge: 70px;
-$logoWidthSmall: 100px;
-$logoHeightSmall: 60px;
-
-$navFontSizeLarge: 20px;
-$navFontSizeMedium: 15px;
-$navFontSizeSmall: 12px;
-
-$dropdownFontSizeLarge: 20px;
-$dropdownFontSizeMedium: 15px;
-$dropdownFontSizeSmall: 12px;
-
-$buttonWppWidthLarge: 6vh;
-$buttonWppWidthMedium: 6vh;
-$buttonWppWidthSmall: 3vh;
-
-$videoHeightLarge: 35vh;
-$videoHeightMedium: 35vh;
-$videoHeightSmall: 18vh;
-
-// Mixins
-@mixin media-query($size) {
-    @media screen and (max-width: $size) {
-        @content;
-    }
-}
-
 // Header styles
 header {
     // Media queries for header
@@ -531,3 +502,29 @@ footer {
         }
     }
 }
+/* QUERY INICIAR SESION */
+@media screen and (max-width:500px){
+    main{
+        .form1{
+            form{
+                .divmicuenta{
+                    div{
+                        h1{
+                            font-size: 60%;
+                            text-align: center;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                        label{
+                            font-size: 60%;
+                        }
+                        a{
+                            font-size: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
