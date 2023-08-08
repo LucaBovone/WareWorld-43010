@@ -43,7 +43,7 @@ section form .divmicuenta div {
   position: center;
   animation: rebota 1s alternate infinite ease-out; }
 
-@-webkit-keyframes rebota {
+@keyframes rebota {
   0% {
     top: 600px;
     top: calc(100vh - 10px);
