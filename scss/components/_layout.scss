@@ -24,7 +24,7 @@ body {
 
 .hero {
     width: 100%;
-    padding-bottom: 37vh;
+    padding-bottom: 36vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,20 +90,32 @@ body {
         "texto5 grid5"
         "texto6 grid6"
         "texto7 grid7"
-        "texto8 grid8";
+        "texto8 grid8"
+        "texto9 grid9";
+
     grid-template-columns: 1fr 4fr;
     row-gap: 30px;
     align-items: start;
     justify-items: stretch;
     padding: 50px 50px 100px;
 
-    div h3 {
+    div h1 {
         text-align: center;
+    }
+
+    div{
+        .form-select{
+            color: black !important;
+            option{
+            color: black !important;
+            }
+        }
+
     }
 
     #tituloarmado {
         grid-area: tituloarmado;
-        background-color: rgba(3, 3, 3, 0.90);
+        background-color: rgba(0, 0, 0, 0.2);
         box-shadow: -1px 5px 42px 14px $shadowColor;
         -webkit-box-shadow: -1px 5px 42px 14px $shadowColor;
         -moz-box-shadow: -1px 5px 42px 14px $shadowColor;
@@ -149,6 +161,10 @@ body {
         grid-area: texto8;
     }
 
+    #texto9 {
+        grid-area: texto9;
+    }
+
     #grid1 {
         grid-area: grid1;
     }
@@ -180,7 +196,16 @@ body {
     #grid8 {
         grid-area: grid8;
     }
+
+    #grid9 {
+        grid-area: grid9;
+    }
 }
+
+
+
+
+
 /* SECTION Hardware y Software **/
 .h3section {
     padding-top: 10px;
@@ -346,7 +371,7 @@ body {
         }
 
         h3 {
-            border: 2px $gold double;
+            border: 2px $gold ;
             margin-top: 15px;
             margin-bottom: 20px;
             padding: 6px;
@@ -388,6 +413,7 @@ main{
                 }
                 h1{
                     margin-bottom: 15px;
+                    text-align: center;
                 }
                 label{
                     margin-bottom: 5px;

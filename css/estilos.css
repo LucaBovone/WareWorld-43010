@@ -29,7 +29,8 @@
   justify-content: center;
   align-items: center; }
 
-.divmicuenta label, .divmicuenta a {
+.divmicuenta label,
+.divmicuenta a {
   text-align: center; }
 
 section form .divmicuenta div {
@@ -37,6 +38,19 @@ section form .divmicuenta div {
   background-size: cover;
   background-repeat: none;
   background-attachment: none; }
+
+#Robot {
+  position: center;
+  animation: rebota 1s alternate infinite ease-out; }
+
+@-webkit-keyframes rebota {
+  0% {
+    top: 600px;
+    top: calc(100vh - 10px);
+    height: 0px; }
+  100% {
+    top: 200px;
+    top: calc(100vh - 200px); } }
 
 /* HEADER */
 .head {
@@ -99,7 +113,7 @@ body {
 
 .hero {
   width: 100%;
-  padding-bottom: 37vh;
+  padding-bottom: 36vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,17 +163,21 @@ body {
   box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
   -webkit-box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
   -moz-box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
-  grid-template-areas: "tituloarmado none" "texto1 grid1" "texto2 grid2" "texto3 grid3" "texto4 grid4" "texto5 grid5" "texto6 grid6" "texto7 grid7" "texto8 grid8";
+  grid-template-areas: "tituloarmado none" "texto1 grid1" "texto2 grid2" "texto3 grid3" "texto4 grid4" "texto5 grid5" "texto6 grid6" "texto7 grid7" "texto8 grid8" "texto9 grid9";
   grid-template-columns: 1fr 4fr;
   row-gap: 30px;
   align-items: start;
   justify-items: stretch;
   padding: 50px 50px 100px; }
-  .gridcontainer div h3 {
+  .gridcontainer div h1 {
     text-align: center; }
+  .gridcontainer div .form-select {
+    color: black !important; }
+    .gridcontainer div .form-select option {
+      color: black !important; }
   .gridcontainer #tituloarmado {
     grid-area: tituloarmado;
-    background-color: rgba(3, 3, 3, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
     -webkit-box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
     -moz-box-shadow: -1px 5px 42px 14px rgba(110, 107, 4, 0.78);
@@ -185,6 +203,8 @@ body {
     grid-area: texto7; }
   .gridcontainer #texto8 {
     grid-area: texto8; }
+  .gridcontainer #texto9 {
+    grid-area: texto9; }
   .gridcontainer #grid1 {
     grid-area: grid1; }
   .gridcontainer #grid2 {
@@ -201,6 +221,8 @@ body {
     grid-area: grid7; }
   .gridcontainer #grid8 {
     grid-area: grid8; }
+  .gridcontainer #grid9 {
+    grid-area: grid9; }
 
 /* SECTION Hardware y Software **/
 .h3section {
@@ -342,7 +364,7 @@ body {
       border: 2px #a89f1e solid;
       border-radius: 8px; }
     .section3 div h3 {
-      border: 2px #a89f1e double;
+      border: 2px #a89f1e;
       margin-top: 15px;
       margin-bottom: 20px;
       padding: 6px;
@@ -375,7 +397,8 @@ main .form1 {
       padding: 50px;
       border: 2px black solid; }
     main .form1 form .divmicuenta h1 {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      text-align: center; }
     main .form1 form .divmicuenta label {
       margin-bottom: 5px; }
     main .form1 form .divmicuenta input {
